@@ -36,7 +36,6 @@ class ConnectionInfo {
   static Future<List<ConnectionInfo>> getSharedConn() async {
     SharedPreferences share = await SharedPreferences.getInstance();
     String? json = share.getString("connections");
-    print(json);
     List<dynamic> decodeJson = json == null ? [] : jsonDecode(json);
     return decodeJson.map((connection) => ConnectionInfo.fromJson(connection)).toList();
   }

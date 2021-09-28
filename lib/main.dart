@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.red,
         backgroundColor: Colors.white
       ),
-      home: IndexPage()
+      home: const IndexPage()
     );
   }
 }
