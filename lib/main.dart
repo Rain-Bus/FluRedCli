@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:redis_mobile_client/page/client/client_page.dart';
 import 'package:redis_mobile_client/page/index/index_page.dart';
 import 'package:redis_mobile_client/page/splash/splash_page.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.red,
         backgroundColor: Colors.white
       ),
-      home: const IndexPage()
+      home: ClientPage()
     );
   }
 }
